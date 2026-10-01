@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rupee Rogue Platformer</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #1a1a2e; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: sans-serif; color: #eee; }
+  canvas { background: #87ceeb; border: 4px solid #333; max-width: 100%; }
+  #hint { margin-top: 10px; font-size: 14px; color: #aaa; text-align: center; line-height: 1.6; }
+  #hint b { color: #ffd966; }
+</style>
+</head>
+<body>
+<canvas id="game" width="800" height="450"></canvas>
+<div id="hint">
+  <b>← →</b> / <b>A D</b> 이동 · <b>Space</b> / <b>↑</b> / <b>W</b> 점프(길게 누르면 높이) · <b>Z</b> / <b>J</b> / <b>X</b> 공격 · <b>R</b> 새 맵<br>
+  스테이지 순환: 일반 → 중간보스(포탈 봉인) → 보스 · 갈수록 어려워짐<br>
+  가시와 구멍은 즉사 · 금 간 발판은 오래 서 있으면 무너짐 · 클리어 후 <b>Space</b>로 다음 스테이지
+</div>
+<script src="game.js"></script>
+</body>
+</html>
